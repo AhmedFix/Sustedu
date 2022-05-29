@@ -14,7 +14,8 @@ class Course extends Model
         'teacher_id',
         'course_description'
     ];
-
+    protected $hidden = ['created_at','updated_at','pivot'];
+   
     // rel
     public function students()
     {
@@ -36,5 +37,6 @@ class Course extends Model
     //scope
 
     //fun
+
 
 }// end of Model

@@ -16,6 +16,7 @@ class Subject extends Model
         'teacher_id',
         'description'
     ];
+    protected $hidden = ['created_at','updated_at','pivot'];
     
     // rel
     public function teacher()
